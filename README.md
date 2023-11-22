@@ -22,3 +22,15 @@
     <script src="script.js"></script>
 </body>
 </html>
+// script.js
+function openTab(tabName) {
+    var i, tabContent;
+    tabContent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabContent.length; i++) {
+        tabContent[i].style.display = "none";
+    }
+    document.getElementById(tabName + "Content").style.display = "block";
+}
+git add .
+git commit -m "Adicionando arquivos iniciais"
+git push origin master
